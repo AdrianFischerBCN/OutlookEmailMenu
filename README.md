@@ -43,16 +43,16 @@ Use function "MoveToFolder". Arguments for the function are:
 1. An Array with all the folders and subfolders
 2. Optional argument: if the folders are inside the Inbox, introduce the username of email account of the inbox
 
-Example A. Folder PST_Archive > Claims > RearDoor
-Call MoveToFolder(Array("PST_FolderName","Subfolder1", "Subfolder2"))
+Example A. Folder PST_Archive > Claims > RearDoor  
+Call MoveToFolder(Array("PST_FolderName","Subfolder1", "Subfolder2"))  
 
-Example B. Move to the subfolder "Private" contained in the Inbox of user afischer
+Example B. Move to the subfolder "Private" contained in the Inbox of user afischer  
 Call MoveToFolder(Array("PST_FolderName","Subfolder1", "Subfolder2"),"AdrianFischer")
 
 ### Case 2: loop subfolders of given subfold
-It has the same logic as Case 1, but the function to be used is SuggestFolders:
-Call SuggestFolders(Array("PST_FolderName","Subfolder1", "Subfolder2"))
-Call SuggestFolders(Array("PST_FolderName","Subfolder1", "Subfolder2"),"AdrianFischer")
+It has the same logic as Case 1, but the function to be used is SuggestFolders:  
+Call SuggestFolders(Array("PST_FolderName","Subfolder1", "Subfolder2"))  
+Call SuggestFolders(Array("PST_FolderName","Subfolder1", "Subfolder2"),"AdrianFischer")  
 
 
 ### Disclaimer
