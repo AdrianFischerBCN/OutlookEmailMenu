@@ -2,10 +2,10 @@
 Creates a menu which helps sorting emails.
 
 
-# Purpose of this project
+## Purpose of this project
 Some people tend to create a huge ammount of folders with subfolders to properly sort the emails. This results in an unacceptable waste of time scrolling the folders on the left side of Outlook. This outlook project aims to simplify this task by creating a menu that can be called as a pop-up (it is a userform). An initial set-up is required the first time to tell Outlook which are the paths and to upload the images to be used.
 
-# On clic sorting
+## On clic sorting
 There are two types of functions to sort the emails. 
 Type 1: Directly move to a hardcoded folder. This can be used to create a button for each of the top used folders
 Type 2: If there is a folder with many subfolders it may be convinient to search for a specific folder given an input string (hashtags). For example, if one has a folder with claims and one claim per customer and product, then it can be convenient to call this function, input the customer name and then get a menu with the folders that match that customer's name. The macro loops all subfolder in the specified folder and compares it to the hashtags to be searched.
@@ -53,6 +53,17 @@ Call MoveToFolder(Array("PST_FolderName","Subfolder1", "Subfolder2"),"AdrianFisc
 It has the same logic as Case 1, but the function to be used is SuggestFolders:  
 Call SuggestFolders(Array("PST_FolderName","Subfolder1", "Subfolder2"))  
 Call SuggestFolders(Array("PST_FolderName","Subfolder1", "Subfolder2"),"AdrianFischer")  
+
+
+### Special comment for Inbox
+There are two ways to assign the Inbox. Besides the mentioned method of using the optional Inbox parameter. Alternatively, it is also possible to directly use the path and inputing the email as first Folder. For example: 
+Call MoveToFolder(Array("adrian.fischer@dummycompany.com","Inbox","Subfolder1")) 
+
+is equivalent to
+
+Call MoveToFolder(Array("Subfolder1"),"AdrianFischer") 
+
+
 
 
 ## 3. Add button to Outlook
