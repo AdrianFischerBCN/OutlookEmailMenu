@@ -55,6 +55,16 @@ Call SuggestFolders(Array("PST_FolderName","Subfolder1", "Subfolder2"))
 Call SuggestFolders(Array("PST_FolderName","Subfolder1", "Subfolder2"),"AdrianFischer")  
 
 
+## 3. Add button to Outlook
+An icon can now be added to the Quick Access Toolbar or the Ribbon.
+File > Options > Quick Access Toolbar
+File > Options > Customize Ribbon
+
+I suggest using the Quick Access Toolbar. Later it can be called pressing ALT + icon number. 
+
+Eventually Outlook will distrust the macro project. You might have to self-sign the project to prevent Outlook from blocking it.
+More information here: https://support.microsoft.com/en-us/office/digitally-sign-your-macro-project-956e9cc8-bbf6-4365-8bfa-98505ecd1c01
+
 ### Disclaimer
 I initially wrote this function for myself some years ago. Thus I commented most of the code in my mother tongue, Spanish. 
 Since it was my first attempt using VBA for Outlook it is rather unefficient. 
