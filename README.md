@@ -2,10 +2,10 @@
 Creates a menu which helps sorting emails.
 
 
-## Purpose of this project
+### Purpose of this project
 Some people tend to create a huge ammount of folders with subfolders to properly sort the emails. This results in an unacceptable waste of time scrolling the folders on the left side of Outlook. This outlook project aims to simplify this task by creating a menu that can be called as a pop-up (it is a userform). An initial set-up is required the first time to tell Outlook which are the paths and to upload the images to be used.
 
-## On clic sorting
+### On clic sorting
 There are two types of functions to sort the emails. 
 Type 1: Directly move to a hardcoded folder. This can be used to create a button for each of the top used folders
 Type 2: If there is a folder with many subfolders it may be convinient to search for a specific folder given an input string (hashtags). For example, if one has a folder with claims and one claim per customer and product, then it can be convenient to call this function, input the customer name and then get a menu with the folders that match that customer's name. The macro loops all subfolder in the specified folder and compares it to the hashtags to be searched.
