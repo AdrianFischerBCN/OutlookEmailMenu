@@ -25,7 +25,6 @@ where xxxxxx is the username of the current user.
 1. Open Outlook
 2. Open the VBA editor from inside Outlook
 3. Import all provided modules and userforms
-4.
   i.   UF_FolderMenu
   ii.  UF_MainMenu
   iii. MainMenu_Emails
@@ -35,6 +34,7 @@ where xxxxxx is the username of the current user.
 1. Open Visual Basic in Outlook
 2. Double clic on MainMenu_Emails
 3. For each folder to which emails must directly be moved (case 1) or in which subfolders are to be looped (case 2):
+
     i.   Create a button  
     
     ii.  Customize button (size, image, etc.) 
