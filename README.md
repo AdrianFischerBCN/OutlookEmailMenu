@@ -51,21 +51,21 @@ Example A. Folder PST_Archive > Claims > RearDoor
 Call MoveToFolder(Array("PST_FolderName","Subfolder1", "Subfolder2"))  
 
 Example B. Move to the subfolder "Private" contained in the Inbox of user afischer  
-Call MoveToFolder(Array("PST_FolderName","Subfolder1", "Subfolder2"),"AdrianFischer")
+Call MoveToFolder(Array("PST_FolderName","Subfolder1", "Subfolder2"),"afischer")
 
 ### Case 2: loop subfolders of given subfold
 It has the same logic as Case 1, but the function to be used is SuggestFolders:  
 Call SuggestFolders(Array("PST_FolderName","Subfolder1", "Subfolder2"))  
-Call SuggestFolders(Array("PST_FolderName","Subfolder1", "Subfolder2"),"AdrianFischer")  
+Call SuggestFolders(Array("PST_FolderName","Subfolder1", "Subfolder2"),"afischer")  
 
 
 ### Special comment for Inbox
 There are two ways to assign the Inbox. Besides the mentioned method of using the optional Inbox parameter. Alternatively, it is also possible to directly use the path and inputing the email as first Folder. For example: 
 Call MoveToFolder(Array("adrian.fischer@dummycompany.com","Inbox","Subfolder1")) 
 
-is equivalent to
+is equivalent to (where the username is afischer):
 
-Call MoveToFolder(Array("Subfolder1"),"AdrianFischer") 
+Call MoveToFolder(Array("Subfolder1"),"afischer") 
 
 
 
