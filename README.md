@@ -35,8 +35,11 @@ where xxxxxx is the username of the current user.
 2. Double clic on MainMenu_Emails
 3. For each folder to which emails must directly be moved (case 1) or in which subfolders are to be looped (case 2):
     i.   Create a button  
-    ii.  Customize button (size, image, etc.)  
+    
+    ii.  Customize button (size, image, etc.) 
+    
     iii. Double clic and add code to the folder (see below)  
+    
     
 ### Case 1: directly move to a given folder
 Use function "MoveToFolder". Arguments for the function are:
